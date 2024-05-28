@@ -27,7 +27,7 @@ function App() {
   return (
         
     <Authenticator>
-      {({ signOut, user }) => (
+      {({ signOut }) => (
     <main>
       <h1>Lista</h1>
       <button onClick={createTodo}>+ Agregar elemento a la lista</button>

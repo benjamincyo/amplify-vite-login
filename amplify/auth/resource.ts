@@ -6,6 +6,9 @@ import { defineAuth } from '@aws-amplify/backend';
  */
 export const auth = defineAuth({
   loginWith: {
-    email: true,
+    email: false,
+    phoneNumber: true,
   },
+  signUpAttributes: ['phone_number'],
+  verificationMechanisms: ['SMS'],
 });

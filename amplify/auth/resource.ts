@@ -9,6 +9,4 @@ export const auth = defineAuth({
     email: false,
     phoneNumber: true,
   },
-  signUpAttributes: ['phone_number'],
-  verificationMechanisms: ['SMS'],
 });
